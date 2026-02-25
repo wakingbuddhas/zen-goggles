@@ -1,0 +1,247 @@
+! name: Zen Default
+! description: Favor the indie internet. Downrank corporate mega-sites, SEO farms, and walled gardens. Boost independent blogs, small communities, and non-profit knowledge sources. The Kagi/Marginalia philosophy applied to Brave Search.
+! public: true
+! author: Zen Notes
+
+! ─────────────────────────────────────────────────────────────────
+! DOWNRANK: Corporate mega-sites, walled gardens, SEO/content farms
+! ─────────────────────────────────────────────────────────────────
+
+! Social media walled gardens (JS-heavy, login walls, no useful search content)
+$downrank=5,site=pinterest.com
+$downrank=5,site=pinterest.co.uk
+$downrank=5,site=pinterest.ca
+$downrank=5,site=pinterest.fr
+$downrank=5,site=pinterest.de
+$downrank=5,site=instagram.com
+$downrank=5,site=facebook.com
+$downrank=5,site=fb.com
+$downrank=5,site=tiktok.com
+$downrank=5,site=twitter.com
+$downrank=5,site=x.com
+$downrank=5,site=linkedin.com
+$downrank=5,site=truthsocial.com
+$downrank=5,site=threads.net
+$downrank=5,site=snapchat.com
+
+! Aggregators that outrank original sources
+$downrank=4,site=reddit.com
+$downrank=4,site=quora.com
+$downrank=4,site=medium.com
+$downrank=4,site=tumblr.com
+$downrank=3,site=substack.com
+$downrank=3,site=youtube.com
+
+! Content farms / SEO spam / AI-generated content mills
+$downrank=5,site=w3schools.com
+$downrank=5,site=about.com
+$downrank=5,site=answers.com
+$downrank=5,site=ehow.com
+$downrank=5,site=wikihow.com
+$downrank=5,site=screenrant.com
+$downrank=5,site=gamerant.com
+$downrank=5,site=cbr.com
+$downrank=5,site=buzzfeed.com
+$downrank=5,site=boredpanda.com
+$downrank=5,site=distractify.com
+$downrank=5,site=thethings.com
+$downrank=5,site=articlesfactory.com
+$downrank=5,site=articlesbase.com
+$downrank=5,site=hubpages.com
+$downrank=5,site=helium.com
+$downrank=5,site=ezinearticles.com
+$downrank=5,site=therichest.com
+$downrank=5,site=thetoptens.com
+$downrank=5,site=listverse.com
+$downrank=5,site=ranker.com
+$downrank=5,site=whatculture.com
+$downrank=5,site=looper.com
+$downrank=5,site=collider.com
+$downrank=5,site=movieweb.com
+$downrank=5,site=thegamer.com
+$downrank=5,site=valnet.com
+
+! Paywalled news (useless results — can't read the content)
+$downrank=4,site=bloomberg.com
+$downrank=4,site=wsj.com
+$downrank=4,site=nytimes.com
+$downrank=4,site=washingtonpost.com
+$downrank=4,site=ft.com
+$downrank=4,site=economist.com
+$downrank=4,site=theatlantic.com
+$downrank=4,site=newyorker.com
+$downrank=4,site=time.com
+$downrank=4,site=wired.com
+$downrank=4,site=businessinsider.com
+$downrank=4,site=forbes.com
+$downrank=4,site=barrons.com
+$downrank=4,site=hbr.org
+
+! E-commerce / product noise (pollutes informational queries)
+$downrank=4,site=amazon.com
+$downrank=4,site=amazon.co.uk
+$downrank=4,site=amazon.de
+$downrank=4,site=amazon.ca
+$downrank=4,site=walmart.com
+$downrank=4,site=target.com
+$downrank=4,site=ebay.com
+$downrank=4,site=etsy.com
+$downrank=4,site=aliexpress.com
+$downrank=4,site=alibaba.com
+$downrank=4,site=wish.com
+$downrank=4,site=shopify.com
+$downrank=4,site=bestbuy.com
+$downrank=4,site=homedepot.com
+$downrank=4,site=lowes.com
+$downrank=4,site=wayfair.com
+$downrank=4,site=overstock.com
+
+! Job / review / travel aggregators (noise, not original content)
+$downrank=4,site=yelp.com
+$downrank=4,site=tripadvisor.com
+$downrank=4,site=indeed.com
+$downrank=4,site=glassdoor.com
+$downrank=4,site=booking.com
+$downrank=4,site=expedia.com
+$downrank=4,site=kayak.com
+$downrank=4,site=hotels.com
+$downrank=4,site=priceline.com
+$downrank=4,site=trustpilot.com
+$downrank=4,site=bbb.org
+$downrank=4,site=sitejabber.com
+$downrank=4,site=consumeraffairs.com
+$downrank=3,site=g2.com
+$downrank=3,site=capterra.com
+
+! Big corporate tech docs (downrank slightly — useful but over-represented)
+$downrank=2,site=docs.microsoft.com
+$downrank=2,site=learn.microsoft.com
+$downrank=2,site=cloud.google.com
+$downrank=2,site=aws.amazon.com
+$downrank=2,site=docs.aws.amazon.com
+$downrank=2,site=developer.apple.com
+
+! Affiliate / comparison / coupon SEO
+$downrank=5,site=thewirecutter.com
+$downrank=5,site=pcmag.com
+$downrank=5,site=cnet.com
+$downrank=5,site=tomsguide.com
+$downrank=5,site=techradar.com
+$downrank=5,site=theverge.com
+$downrank=5,site=engadget.com
+$downrank=5,site=zdnet.com
+$downrank=5,site=retailmenot.com
+$downrank=5,site=groupon.com
+$downrank=5,site=slickdeals.net
+$downrank=5,site=dealnews.com
+$downrank=5,site=honey.com
+$downrank=5,site=rakuten.com
+$downrank=5,site=couponfollow.com
+
+! ─────────────────────────────────────────────────────────────────
+! BOOST: Indie web, personal blogs, small communities, non-profit
+! ─────────────────────────────────────────────────────────────────
+
+! Indie blogging platforms & personal web
+$boost=3,site=bear.blog
+$boost=3,site=bearblog.dev
+$boost=3,site=write.as
+$boost=3,site=micro.blog
+$boost=3,site=neocities.org
+$boost=3,site=tilde.club
+$boost=3,site=tilde.town
+$boost=3,site=sourcehut.org
+$boost=3,site=sr.ht
+$boost=3,site=codeberg.org
+$boost=3,site=omg.lol
+$boost=3,site=mataroa.blog
+$boost=3,site=prose.sh
+$boost=3,site=pika.page
+
+! Indie communities & forums
+$boost=3,site=lobste.rs
+$boost=3,site=tildes.net
+$boost=3,site=metafilter.com
+$boost=3,site=slashdot.org
+$boost=2,site=news.ycombinator.com
+$boost=2,site=lemmy.ml
+$boost=2,site=kbin.social
+$boost=2,site=fediverse.info
+
+! Independent tech blogs & resources
+$boost=3,site=arstechnica.com
+$boost=2,site=lwn.net
+$boost=3,site=drewdevault.com
+$boost=3,site=jvns.ca
+$boost=3,site=danluu.com
+$boost=3,site=rachelbythebay.com
+$boost=3,site=simonwillison.net
+$boost=3,site=fasterthanli.me
+$boost=3,site=brendangregg.com
+$boost=3,site=kalzumeus.com
+$boost=3,site=joelonsoftware.com
+$boost=3,site=paulgraham.com
+$boost=3,site=steveyegge.com
+$boost=3,site=250bpm.com
+$boost=3,site=xeiaso.net
+$boost=3,site=tonsky.me
+$boost=3,site=gwern.net
+
+! Knowledge & reference (non-profit, open)
+$boost=3,site=wikipedia.org
+$boost=3,site=wikimedia.org
+$boost=3,site=wiktionary.org
+$boost=3,site=wikisource.org
+$boost=3,site=archive.org
+$boost=3,site=web.archive.org
+$boost=3,site=gutenberg.org
+$boost=2,site=openlibrary.org
+$boost=2,site=standardebooks.org
+$boost=2,site=plato.stanford.edu
+$boost=2,site=iep.utm.edu
+
+! Independent journalism & non-profit news
+$boost=3,site=propublica.org
+$boost=3,site=themarkup.org
+$boost=3,site=theintercept.com
+$boost=3,site=currentaffairs.org
+$boost=2,site=bellingcat.com
+$boost=2,site=undark.org
+$boost=2,site=restofworld.org
+$boost=2,site=grist.org
+$boost=2,site=thebaffler.com
+$boost=2,site=lrb.co.uk
+$boost=2,site=nplusonemag.com
+$boost=2,site=logicmag.io
+
+! Open source / open access / non-profit tech
+$boost=2,site=fsf.org
+$boost=2,site=eff.org
+$boost=2,site=creativecommons.org
+$boost=2,site=openbsd.org
+$boost=2,site=freebsd.org
+$boost=2,site=debian.org
+$boost=2,site=archlinux.org
+$boost=2,site=nixos.org
+$boost=2,site=mozilla.org
+$boost=2,site=signal.org
+$boost=2,site=torproject.org
+
+! Academic open access
+$boost=2,site=arxiv.org
+$boost=2,site=doaj.org
+$boost=2,site=plos.org
+$boost=2,site=scielo.org
+$boost=2,site=core.ac.uk
+$boost=2,site=semanticscholar.org
+$boost=2,site=scholar.google.com
+
+! Personal wikis, digital gardens, smallweb gems
+$boost=3,site=wiki.xxiivv.com
+$boost=3,site=100r.co
+$boost=3,site=solar.lowtechmagazine.com
+$boost=3,site=lowtechmagazine.com
+$boost=3,site=permacomputing.net
+$boost=3,site=limited.systems
+$boost=3,site=suckless.org
+$boost=3,site=cat-v.org
