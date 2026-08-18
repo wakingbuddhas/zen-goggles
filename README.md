@@ -1,12 +1,15 @@
 # zen-goggles
 
-Re-ranking filters for the [Brave Search API](https://search.brave.com/goggles).
+A re-ranking filter for the [Brave Search API](https://search.brave.com/goggles).
 
-| File | Effect |
+`zen_default.goggle` is purely subtractive — it downranks noise and boosts nothing. Everything not listed keeps its natural ranking and rises as the listed sites fall.
+
+| Weight | Downranked |
 |---|---|
-| `zen_default.goggle` | Re-rank. Downranks social media, SEO/content farms, paywalled news, e-commerce, and affiliate review sites. Boosts personal blogs, indie communities, open reference, non-profit journalism, and open access research. |
-| `academic.goggle` | Allowlist. Discards everything except open access research — preprints, OA journals, government, universities, libraries. |
-| `code.goggle` | Allowlist. Discards everything except developer resources — official docs, repositories, package registries, Q&A, indie dev blogs. |
+| 5 | Social walled gardens, SEO/content farms, affiliate review sites |
+| 4 | Aggregators over originals, paywalled news, e-commerce, review/travel/job aggregators |
+| 3 | Substack, YouTube, G2, Capterra |
+| 2 | Large-vendor documentation |
 
 ## Use
 
