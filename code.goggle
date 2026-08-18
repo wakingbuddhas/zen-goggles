@@ -1,7 +1,7 @@
 ! name: Zen Code
-! description: Curated allowlist of developer resources — documentation, repositories, Q&A, and independent tech blogs. Favors primary sources and indie devs over corporate marketing.
+! description: Allowlist. Developer resources only — official docs, repositories, package registries, Q&A, and indie dev blogs.
 ! public: true
-! author: Zen Notes
+! author: wakingbuddhas
 
 $discard
 

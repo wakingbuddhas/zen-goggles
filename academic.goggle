@@ -1,7 +1,7 @@
 ! name: Zen Academic
-! description: Open access academic sources — everything here is free to read. Preprints, OA journals, government research, universities, and public databases. No paywalled publishers.
+! description: Allowlist. Open access research only — preprints, OA journals, government, universities, libraries. Paywalled publishers are discarded.
 ! public: true
-! author: Zen Notes
+! author: wakingbuddhas
 
 $discard
 
